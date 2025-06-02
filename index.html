@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>orphan's pfs</title>
+            <link href="https://fonts.cdnfonts.com/css/neutraface-text" rel="stylesheet">
+      </head>
+
+      <body>
+            <style>
+                  @keyframes rainbow {
+                        0%   { color: red; }
+                        16%  { color: orange; }
+                        33%  { color: yellow; }
+                        50%  { color: green; }
+                        66%  { color: blue; }
+                        83%  { color: indigo; }
+                        100% { color: violet; }
+                  }
+
+                  @keyframes rainbow-bg {
+                        0%   { background-color: red; }
+                        16%  { background-color: orange; }
+                        33%  { background-color: yellow; }
+                        50%  { background-color: green; }
+                        66%  { background-color: blue; }
+                        83%  { background-color: indigo; }
+                        100% { background-color: violet; }
+                  }
+
+                  .jumping-text span {
+                        display: inline-block;
+                        animation: jump 1s ease-in-out infinite;
+                  }
+
+                  .jumping-text span:nth-child(1) { animation-delay: 0s; }
+                  .jumping-text span:nth-child(2) { animation-delay: 0.05s; }
+                  .jumping-text span:nth-child(3) { animation-delay: 0.1s; }
+                  .jumping-text span:nth-child(4) { animation-delay: 0.15s; }
+                  .jumping-text span:nth-child(5) { animation-delay: 0.2s; }
+                  .jumping-text span:nth-child(6) { animation-delay: 0.25s; }
+                  .jumping-text span:nth-child(7) { animation-delay: 0.3s; }
+                  .jumping-text span:nth-child(8) { animation-delay: 0.35s; }
+                  .jumping-text span:nth-child(9) { animation-delay: 0.4s; }
+                  .jumping-text span:nth-child(10) { animation-delay: 0.45s; }
+                  .jumping-text span:nth-child(11) { animation-delay: 0.5s; }
+                  .jumping-text span:nth-child(12) { animation-delay: 0.55s; }
+                  .jumping-text span:nth-child(13) { animation-delay: 0.6s; }
+                  .jumping-text span:nth-child(14) { animation-delay: 0.65s; }
+                  .jumping-text span:nth-child(15) { animation-delay: 0.7s; }
+                  .jumping-text span:nth-child(16) { animation-delay: 0.75s; }
+                  .jumping-text span:nth-child(17) { animation-delay: 0.8s; }
+                  .jumping-text span:nth-child(18) { animation-delay: 0.85s; }
+                  .jumping-text span:nth-child(19) { animation-delay: 0.9s; }
+                  .jumping-text span:nth-child(20) { animation-delay: 0.95s; }
+                  .jumping-text span:nth-child(21) { animation-delay: 1s; }
+                  .jumping-text span:nth-child(22) { animation-delay: 1.05s; }
+                  .jumping-text span:nth-child(23) { animation-delay: 1.1s; }
+                  .jumping-text span:nth-child(24) { animation-delay: 1.15s; }
+                  .jumping-text span:nth-child(25) { animation-delay: 1.2s; }
+                  .jumping-text span:nth-child(26) { animation-delay: 1.25s; }
+                  .jumping-text span:nth-child(27) { animation-delay: 1.3s; }
+                  .jumping-text span:nth-child(28) { animation-delay: 1.35s; }
+                  .jumping-text span:nth-child(29) { animation-delay: 1.4s; }
+                  .jumping-text span:nth-child(30) { animation-delay: 1.45s; }
+                  .jumping-text span:nth-child(31) { animation-delay: 1.5s; }
+                  .jumping-text span:nth-child(32) { animation-delay: 1.55s; }
+                  .jumping-text span:nth-child(33) { animation-delay: 1.6s; }
+
+
+                  @keyframes jump {
+                        0%, 100% { transform: translateY(0); }
+                        50% { transform: translateY(-20px); }
+                  }
+            </style>
+
+            <h1 style="animation: rainbow 3s linear infinite; text-align: center; font-size: 100px; font-weight: bold; font-family: 'Neutraface Text';">orphan's personal file sharing</h1>
+            
+            <div style="text-align: center;">
+                  <h1 class="jumping-text" style="font-size: 25px; text-align: center; font-family: 'Neutraface Text';">    <span>d</span><span>o</span><span>w</span><span>n</span><span>l</span><span>o</span><span>a</span><span>d</span><span>i</span><span>n</span><span>g</span><span>:</span>
+    <span> </span><span>b</span><span>a</span><span>n</span><span>d</span><span>i</span><span>t</span>
+    <span> </span><span>c</span><span>a</span><span>m</span><span>p</span>
+    <span> </span><span>w</span><span>h</span><span>e</span><span>e</span><span>l</span>
+    <span> </span><span>m</span><span>a</span><span>c</span><span>r</span><span>o</span></h1>
+                  <button id="download-btn" style="font-size: 25px; text-align: center; font-family: 'Neutraface Text'; animation: rainbow-bg 5s linear infinite;">download this shit gng</button>
+            </div>
+
+            <script>
+                  let button = document.getElementById("download-btn")
+
+                  button.addEventListener("click", () => {
+                        const link = document.createElement("a");
+                        link.href = "./files/orphans_banditcamp_wheel_macro.exe";
+                        link.download = "orphans_banditcamp_wheel_macro.exe";
+
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                  })
+
+            </script>
+      </body>
+</html>
